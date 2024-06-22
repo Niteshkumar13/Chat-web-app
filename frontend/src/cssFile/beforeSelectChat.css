@@ -1,0 +1,25 @@
+.before-selected-chat{
+    width: 100%;
+    display: grid;
+    text-align: center;
+    place-items: center;
+    min-width: 400px;
+}
+
+.bg-for-before-selected-chat{
+    height:200px;
+    width:400px;
+    background-image: url('../image/chat-3d-icon-png.webp');
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+
+.before-selected-chat-bg-image-text span{
+    font-size: 30px;
+    text-align: center;
+}

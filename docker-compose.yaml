@@ -1,0 +1,47 @@
+version: "3.8"
+services:
+  mongodb:
+     image: "mongo"
+     container_name : Database
+     volumes:
+       - data:/data/db
+     networks :
+         - Chat-app
+  backend: 
+      build : ./backend
+      restart: always
+      container_name : Backend
+      ports:
+          - 3001:3001
+      volumes :
+          - logs:/app/logs 
+          - ./backend:/app
+          - /app/node_modules
+      depends_on :
+           - mongodb
+      env_file:
+           - .env.txt
+      networks :
+         - Chat-app 
+
+  frontend :
+     build: ./frontend
+     restart: always
+     container_name : Frontend
+     ports:
+         - 3000:5173
+     volumes:
+         - ./frontend/src:/app/src
+     stdin_open : true
+     env_file:
+           - .env.txt
+     depends_on:
+         - backend
+     networks :
+         - Chat-app
+volumes:
+  data:
+  logs:
+networks:
+    Chat-app:
+      driver : bridge

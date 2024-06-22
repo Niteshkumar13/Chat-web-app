@@ -1,0 +1,110 @@
+.User-profile-container{
+    display: flex;
+    align-items: center;
+    background-color: #4a5b76;
+    width: 280px;
+    gap: 8px;
+    padding: 7px 10px;
+    border-radius: 5px;
+    margin:2px 0 0 7px;
+    height: 50px;
+    position: relative;
+
+}
+.User-profile-container-name-last-message{
+    display: grid;
+    width: 100%;
+}
+.User-profile-container-name-last-message .last-message{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgb(240, 232, 232);
+}
+.online{
+    background-color:blue;
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    border-radius: 50%;
+    left: 45px;
+    top: 15px;
+}
+.User-profile-container:hover{
+    background-color:#334155;
+    cursor: pointer;
+}
+.User-profile-container img{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+.User-profile-container span.name{
+    font-size: 22px;
+    color: aliceblue;
+    width: 160px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+.rocket{
+    font-size: 25px;
+}
+.user-search-profile{
+  background-color: #1e293b;
+  display: flex;
+  place-items: center;
+  width: 290px;
+  height: 40px;
+  gap: 2px;
+  justify-content: space-around;
+  padding: 5px 5px;
+  border-radius: 10px;
+  
+}
+.user-search-profile img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+#main-search-input-tag{
+    height: 25px;
+    width: 180px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    padding: 5px 5px;
+    border-radius: 10px;
+
+}
+.user-search-profile  button{
+    height:  35px;
+    cursor: pointer;
+    width: 35px;
+    background-image: url('https://uxwing.com/wp-content/themes/uxwing/download/user-interface/search-icon.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    border: none;
+}
+.user-search-profile  button:hover{
+    background-color: rgb(220, 210, 230);
+}
+@media  screen and (max-width:768px) {
+    .online{
+        left: 48px;
+        top: 10px;
+    }
+}
+@media  screen and (max-width:1024px) {
+    .User-profile-container span.name{
+        font-size: 20px;
+        width: 170px;
+    }
+    .User-profile-container img{
+        height: 50px;
+        width: 50px;
+    }
+}

@@ -1,0 +1,139 @@
+@import url('../cssFile//leftUserContainer.css');
+.name-image-for{
+    width: 100%;
+    min-height: auto;
+    max-height: 250px;
+    overflow: auto;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.row{
+    display: flex;
+    gap: 1.5px;
+    
+}
+#add-user-in-game{
+    position: absolute;
+    left: 0;
+    top:0;
+    outline: 2px solid green;
+    border: none;
+    margin-top: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 5px;
+}
+.row div{
+    background-color:white;
+    color: black;
+    height: 90px;
+    width: 90px;
+    display: grid;
+    place-items: center;
+    font-size: 60px;
+    border-radius: 10px;
+    border: 5px solid black;
+}
+.row div:hover{
+    background-color: #4b23e9;
+    color: white;
+}
+.child-game{
+    display: grid;
+    gap: 1.5px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.child-container-for-game{
+    display: grid;
+    place-items: center;
+    width: 100vw;
+}
+.tic-tac-toe{
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+}
+.turn-for-game{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 27px;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+.turn-for-game select{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 70px;
+}
+.name-for-game{
+    display: flex;
+    width: 50vw;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 5px 0;
+    justify-content: space-between;
+    font-size: 25px;
+    padding: 0 10px;
+}
+.name-for-game >span{
+    background-color: rgb(245, 227, 216);
+    padding: 0 5px;
+    width: 230px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.after-winning-the-game{
+    display: grid;
+    place-items: center;
+    gap: 10px;
+
+}
+.after-winning-the-game button{
+    font-size: 23px;
+    outline: 2px salmon solid ;
+    border:none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.search-user-for-game{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:rgba(231, 231, 234, 0.9);
+    width: 270px;
+    border-radius: 5px;
+}
+.search-user-for-game input{
+    padding: 5px;
+    font-size: 20px;
+    width:90%;
+    outline: 2px black solid ;
+    border:none;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.container-for-game{
+    background-image: url("../image/image.png");
+    background-size: 200px;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    min-width: 320px;
+}
+.name-for-game{
+    display: flex;
+}
+@media  screen and (max-width:768px) {
+    .name-for-game{
+        width: 90vw;
+    }
+}

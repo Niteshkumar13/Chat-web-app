@@ -1,0 +1,148 @@
+.profile-viewer{
+    width: 320px;
+    min-width: 320px;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    top:0;
+    left: 0;
+    animation-name: example;
+    animation-duration: 0.51s;
+    background-color: #d6d8da;
+    /* border-right: 1px solid rgb(98, 92, 92); */
+    border-top-right-radius: 5px;
+}
+
+  @keyframes example {
+  0%   {left:-320px; top:0px;}
+  100% {left:0; top:0;}
+}
+.logout-image{
+    height: 50px;
+     width: 50px;
+     margin-right: 10px;
+     cursor: pointer;
+}
+.change-name-profile-viewer{
+    height: 28px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    background-color: rgb(222, 227, 227);
+    border-radius: 10px;
+}
+.bottom-for-profile-viewer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(226, 109, 55);
+    width: 100%;
+    height: 50px;
+    
+}
+.bottom-for-profile-viewer span{
+    font-size: 25px;
+    margin-left: 10px;
+}
+.top-for-profile-viewer img{
+    height: 150px;
+    border-radius: 50%;
+    width: 150px;
+    box-shadow: 0px 0px 5px rgb(9, 9, 226);
+}
+.top-for-profile-viewer{
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0 0 0;
+    align-items: center;
+    gap: 20px;
+}
+.name-email-profile-viewer{
+    background-color: whitesmoke;
+    font-size: 20px;
+    width: 100%;
+    padding: 5px 0;
+    border-radius: 5px;
+    
+}
+.common_class{
+    padding-left: 15px;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /* background-color: red; */
+}
+.cross-icon-for-profile-viewer{
+    font-size: 40px;
+   display: flex;
+   flex-direction: row-reverse;
+   width: 95%;
+   padding: 10px 0 0 0;
+   position: absolute;
+}
+.status-container{
+    max-height: 350px;
+    min-height: 200px;
+    display: grid;
+    place-items: center;
+    margin-top: 40px;
+    gap: 5px;
+}
+.status-container img{
+    min-height: auto;
+    max-height: 400px;
+    min-width: auto;
+    max-width: 300px;
+    border-radius: 10px;
+}
+.status-container span{
+    width: 300px;
+    font-size: 25px;
+    word-wrap: break-word;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.input-file-select-add-icon{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    width: 100%;
+    bottom: 0;
+    background-color: rgb(226, 109, 55);
+}
+.input-file-select-add-icon .text-input{
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    padding: 4px 5px;
+    width: 100%;
+    outline: none;
+}
+.input-file-select-add-icon .add-the-status{
+    padding: 7px 5px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.delete-the-status{
+    font-size: 20px;
+    color: white;
+}
+.delete-the-status-button{
+ height: 50px;
+ width: 50px;
+  display: flex;
+ justify-content: center;
+ align-items: center;
+ border: none; 
+ cursor: pointer;
+ background-color: rgb(226, 109, 55);
+}
+.status-video{
+    max-width: 95%;
+    min-width: auto;
+}

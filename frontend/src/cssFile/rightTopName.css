@@ -1,0 +1,27 @@
+.profile-pic-for-right{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+.right-top-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.dark-light-mood{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(254, 252, 252);
+    cursor: pointer;
+}
+.right-top-container span{
+    font-size: 23px;
+    width: 300px;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+}

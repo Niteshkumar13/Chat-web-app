@@ -1,0 +1,49 @@
+  .post {
+    width: 100%;
+    height: 80px;
+    display: grid
+
+  }
+  .post .line {
+    float: left;
+    height: 16px;
+    margin-top: 12px;
+    border-radius: 7px;
+    background-image: linear-gradient(90deg, #ddd 0px, #e8e8e8 40px, #ddd 80px);
+    background-size: 600px;
+    animation: shine-lines 1.6s infinite linear;
+  }
+  .a{
+    width: 350px;
+  }
+.b{
+    width: 380px;
+  }
+  .post .line ~ .line {
+    background-color: #ddd;
+  }
+  
+  @keyframes shine-lines {
+    0% {
+      background-position: -100px;
+    }
+    40%, 100% {
+      background-position: 140px;
+    }
+  }
+  @keyframes shine-avatar {
+    0% {
+      background-position: -32px;
+    }
+    40%, 100% {
+      background-position: 208px;
+    }
+  }
+@media screen and (max-width:768px) {
+  .a{
+    width: 200px;
+  }
+.b{
+    width: 250px;
+  }
+}
